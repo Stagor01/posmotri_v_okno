@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -37,12 +39,6 @@ ol {
   list-style: none;
 }
 
-
-.page {
-  display: flex;
-  align-items: center;
-}
-
 .content {
   display: flex;
   gap: 30px;
@@ -57,7 +53,7 @@ ol {
 .result__video-container {
   position: relative;
   inline-size: 711px;
-  margin: 0 0 16px;
+  margin: 0 0 11px;
 }
 
 .result__video {
@@ -106,14 +102,23 @@ ol {
   border-bottom: 1px solid #FFF;
   border-left: none;
   border-right: none;
-  padding: 2px 0;
+  color: currentColor;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
   inline-size: 225px;
   block-size: 25px;
   appearance: none;
+  padding: 2px 0;
   background-color: transparent;
+}
+
+.search-form__textfield:active {
+  outline: 1px solid #FFF;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__checkbox-list {
@@ -186,7 +191,6 @@ input[type='checkbox']:checked + span::before {
   font-weight: 700;
   line-height: 94%; /* 70.5px */
   text-transform: uppercase;
-  margin-bottom: 26px;
 }
 
 .content__accent {
