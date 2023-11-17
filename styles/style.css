@@ -172,14 +172,31 @@ input[type='checkbox']:checked + span::before {
   align-self: flex-end;
 }
 
+.content__details {
+  inline-size: 100%;
+}
+
+
+.title {
+  padding-bottom: 26px;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%; /* 70.5px */
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
 .content__list {
   position: relative;
   overflow-y: scroll;
   block-size: 298px;
-}
-
-.content__details {
-  inline-size: 100%;
 }
 
 .content__list-item:not(:last-child) {
@@ -237,22 +254,6 @@ input[type='checkbox']:checked + span::before {
   block-size: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-.title {
-  padding-bottom: 26px;
-  color: #fff;
-  font-family: Oswald;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 94%; /* 70.5px */
-  text-transform: uppercase;
-  margin-bottom: 26px;
-}
-
-.content__accent {
-  color: #545050;
 }
 
 /*Паттерн*/
