@@ -41,41 +41,17 @@ ol {
 .page {
   display: flex;
   align-items: center;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  background-color: #1b1919;
 }
 
 .content {
   display: flex;
   gap: 30px;
+  margin: 0 30px;
   inline-size: 100%;
 }
 
 .result {
   align-self: flex-end;
-}
-
-.search-form {
-  display: flex;
-  gap: 40px;
-}
-
-.search-form__fieldset-title {
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.content__list {
-  position: relative;
-  overflow-y: scroll;
-  block-size: 399px;
-}
-
-.content__details {
-  inline-size: 100%;
-  margin-top: 26px;
 }
 
 .result__video-container {
@@ -87,6 +63,34 @@ ol {
 .result__video {
   inline-size: 100%;
   block-size: 100%;
+}
+
+.search-form {
+  display: flex;
+  gap: 40px;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  inline-size: 100%;
+}
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.content__list {
+  position: relative;
+  overflow-y: scroll;
+  block-size: 298px;
+}
+
+.content__details {
+  inline-size: 100%;
 }
 
 .content__list-item:not(:last-child) {
@@ -129,6 +133,7 @@ ol {
 }
 
 .title {
+  padding-bottom: 26px;
   color: #fff;
   font-family: Oswald;
   font-size: 75px;
