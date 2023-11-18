@@ -53,12 +53,14 @@ ol {
 .result__video-container {
   position: relative;
   inline-size: 711px;
-  margin: 0 0 11px;
+  block-size: 386px;
+  margin: 0 0 16px;
 }
 
 .result__video {
   inline-size: 100%;
   block-size: 100%;
+  object-fit: cover;
 }
 
 .search-form {
@@ -85,6 +87,7 @@ ol {
   gap: 5px;
   width: fit-content;
   color: #FFF;
+  cursor: pointer;
 }
 
 .search-form__label:hover {
@@ -185,7 +188,7 @@ input[type='checkbox']:checked + span::before {
 .title {
   padding-bottom: 26px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -238,7 +241,7 @@ input[type='checkbox']:checked + span::before {
 .content__video-card-title {
   padding: 2px 2px 5px;
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
